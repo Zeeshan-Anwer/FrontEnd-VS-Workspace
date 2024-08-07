@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Masai School Application </h1>
+    <p> Enter your name and gender to apply for masai </p>
+    <h2 id="res"> display name and gender here </h2>
+
+        <input id="name" type="text" placeholder="Enter your name"/>
+        <select id="gender"> 
+            <option> Male</option>
+            <option> Female</option>
+        </select>
+        <button onclick="show()"> Show Entered Data</button>
+
+</body>
+</html>
+
+<script> 
+    
+   function show(){
+        let name=document.getElementById("name").value
+        let gender=document.getElementById("gender").value
+        document.getElementById("res").innerHTML=
+            "Your Entered name is: <b>"+name +"</b> and Gender is: <b>"+gender+"</b>. Thanks"
+    }
+    </script>

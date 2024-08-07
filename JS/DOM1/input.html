@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="name" type="text" placeholder="Enter Name" /> <br>
+    <input id="mob" type="number" placeholder="Enter Mobile No" /> <br>
+    
+    <select id="mySelect">
+        <option id="option1">Java</option>
+        <option id="option2">JS</option>
+        <option id="option3">htm</option>
+        <option id="option4">css</option>
+      </select>
+
+    <button onclick="show()">Submit</button>
+
+    <h3 id="res1"> </h3>
+    <p id="res2"> </p>
+    <p id="res3"> </p>
+</body>
+</html>
+
+<script>
+
+    function show(){
+      let enteredName=  document.getElementById("name").value
+      document.getElementById("res1").innerHTML = "Welcome <b>" + enteredName + "</b>";
+      var enteredMobileNo=document.getElementById("mob").value
+      document.getElementById("res2").innerHTML="Mobile No: <b>"+enteredMobileNo+"</b>"
+
+        var selectedVal=document.getElementById("mySelect").value
+        document.getElementById("res3").innerHTML="You selected <b>"+ selectedVal +"</b>"
+    }
+</script>

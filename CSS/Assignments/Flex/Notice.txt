@@ -1,0 +1,9 @@
+MASAI NEWS
+Build the layout using flex and its properties
+Masai News.png
+for reference and images refer - https://www.masaischool.com/about/
+
+STUDY LAB
+Build the given layout using flex and its properties
+study-lab.png
+Use dummy images from google, not required to use same images

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudos</title>
+    <style>
+        button:hover{
+            color: red;
+            background-color: yellow;
+            cursor: pointer;
+        }
+        #cont{
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+        }
+        #cont:hover{
+            background-color: yellow;
+        }
+        input:hover{
+            width: 300px;
+        }
+        input:focus{
+            background-color: green;
+        }
+        h1::first-letter{
+            background-color: yellow;
+            font-size: 100px;
+        }
+
+        .container>h1:nth-child(2n){
+            color: red;
+        }
+        /* 1-children no(3)  */
+
+    </style>
+</head>
+<body>
+    <button>Click</button>
+    <div id="cont"></div>
+    <input type="text">
+    <div class="container">
+        <h1>I am Heading1</h1>
+        <h1>I am Heading2</h1>
+        <h1>I am Heading3</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+var name :- name deprecated?
+anonymous function
+How to do text align for h and p
+undefined
+diff btw px %
+
+
+1:- html asignment simplelayout inputbox align
+2:- We assignment 

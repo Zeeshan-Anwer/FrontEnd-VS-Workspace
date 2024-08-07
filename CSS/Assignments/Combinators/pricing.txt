@@ -1,0 +1,7 @@
+PRICING LAYOUT
+Problem Statement
+
+Use flex and box-model and combinators to acheive the given layout.
+Don't add any additional classes or Id's, just use provided classes and IDs and use combinators to catch the tags you want.
+Don't use inline styles.
+Your layout should look like pricing.png

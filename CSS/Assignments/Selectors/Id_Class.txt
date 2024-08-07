@@ -1,0 +1,12 @@
+You can't use any style tags for any of the html tags and you have to use classes and ids to apply the styles, keep the usage of ids to minimal and optimise the usage of classes by using multiple classes.
+
+<head>
+    <style type="text/css">
+        .class1 {
+            
+        }
+        #id2  {
+            
+        }
+    </style>
+</head>

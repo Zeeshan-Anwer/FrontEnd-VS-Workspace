@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .child{
+            width: 50px;
+            height: 35px;
+            /* border: 2px solid red; */
+            box-shadow: 2px 2px 2px 2px lightblue;
+            margin: 8px;
+            border-radius: 10px;
+            
+                        
+        }
+        .parent{
+            width: 100%;
+            /* height: 300px; */
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            
+
+        }
+        #screen{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 4px 4px 4px 4px aliceblue;
+            
+            
+        }
+        .black{
+            background-color: black;
+           color: white;
+        }
+        .red{
+            background-color: red;
+        }
+        #output{
+      
+        height: 40px;
+        width: 286px;
+        border: 2px 2px 2px 2px solid red;
+        box-shadow: 1px 1px 1px 1px aqua;
+        margin-bottom: 5px;
+       
+        
+
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="screen">
+        <div>
+            <div id="output">
+              </div>
+        <div class="parent"> 
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child black">+</div>
+        </div>
+        <div class="parent"> 
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">6</div>
+            <div class="child black">-</div>
+        </div>
+        <div class="parent"> 
+            <div class="child">7</div>
+            <div class="child">8</div>
+            <div class="child">9</div>
+            <div class="child black">*</div>
+        </div>
+        <div class="parent"> 
+            <div class="child">0</div>
+            <div class="child red">C</div>
+            <div class="child black">=</div>
+            <div class="child black">%</div>
+        </div>
+        
+    </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    let arr=document.querySelectorAll(".parent> div")
+    // console.log(arr[3].innerText)
+
+    for(let i=0;i<arr.length;i++){
+        arr[i].addEventListener("click",myCal);
+    }
+    let ans
+    let bag=""
+    function myCal(event){
+        let temp=event.target.innerText
+        if(temp=="C")
+        {
+            document.querySelector("#output").innerText=""
+            bag=""
+        }
+        else if(temp=="=")
+        {
+            ans=eval(bag)
+            bag=""
+            document.querySelector("#output").innerText=ans
+            console.log(ans)
+        }
+        else{
+        bag=bag+temp
+       document.querySelector("#output").innerText=bag
+        }
+       
+
+    }
+
+</script>

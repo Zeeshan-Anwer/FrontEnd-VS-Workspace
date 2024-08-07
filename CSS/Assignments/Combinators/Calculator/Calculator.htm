@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+   
+    #main{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      .row {
+        display: flex;
+
+        /* border: 2px solid red; */
+        width: 300px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .black {
+        background-color: black;
+        color: white;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+      }
+      .row > div {
+        width: 70px;
+        height: 35px;
+        padding: 2px;
+        /* border: 2px solid red; */
+        box-shadow: 1px 1px 1px 1px lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+        border-radius: 8px;
+      }
+      #ans{
+        display: flex;
+        height: 40px;
+        width: 286px;
+       
+        box-shadow: 1px 1px 1px 1px lightgray;
+        margin-bottom: 10px;
+        justify-content: flex-end ;
+        align-items: flex-end;
+        font-size: 25px;
+        padding-right: 7px;
+
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <div style="box-shadow: 2px 2px 2px 2px lightblue;  padding: 20px;">
+        <div id="ans"></div>
+        <div class="row">
+          <div id="one">1</div>
+          <div id="two">2</div>
+          <div id="three">3</div>
+          <div id="plus" class="black">+</div>
+        </div>
+        <div class="row">
+          <div id="four">4</div>
+          <div id="five">5</div>
+          <div id="six">6</div>
+          <div id="minus" class="black">-</div>
+        </div>
+        <div class="row">
+          <div id="seven">7</div>
+          <div id="eight">8</div>
+          <div id="nine">9</div>
+          <div id="division" class="black">%</div>
+        </div>
+        <div class="row">
+          <div id="clear" style="background-color: red;">C</div>
+          <div id="zero">0</div>
+          <div id="equal"class="black">=</div>
+          <div id="mul"class="black">*</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+
+   document.getElementById("one").addEventListener("click", show1)
+   
+    document.getElementById("two").addEventListener("click",show2)
+    document.getElementById("three").addEventListener("click",show3)
+    document.getElementById("plus").addEventListener("click",showPlus)
+    document.getElementById("four").addEventListener("click",show4)
+    document.getElementById("five").addEventListener("click",show5)
+    document.getElementById("six").addEventListener("click",show6)
+    document.getElementById("minus").addEventListener("click",showMin)
+    document.getElementById("seven").addEventListener("click",show7)
+    document.getElementById("eight").addEventListener("click",show8)
+    document.getElementById("nine").addEventListener("click",show9)
+    document.getElementById("division").addEventListener("click",showDiv)
+    document.getElementById("clear").addEventListener("click",showClear)
+    document.getElementById("zero").addEventListener("click",show0)
+    document.getElementById("equal").addEventListener("click",showEqual)
+    document.getElementById("mul").addEventListener("click",showMul)
+
+    console.log("ss",number1)
+   
+    function show1(){
+        document.getElementById("ans").innerText=1
+    }function show2(){
+        document.getElementById("ans").innerText=2
+    }function show3(){
+        document.getElementById("ans").innerText=3
+    }function show4(){
+        document.getElementById("ans").innerText=4
+    }function show5(){
+        document.getElementById("ans").innerText=5
+    }function show6(){
+        document.getElementById("ans").innerText=6
+    }function show7(){
+        document.getElementById("ans").innerText=7
+    }function show8(){
+        document.getElementById("ans").innerText=8
+    }function show9(){
+        document.getElementById("ans").innerText=9
+    }function show0(){
+        document.getElementById("ans").innerText=0
+    }function showDiv(){
+        document.getElementById("ans").innerText="%"
+    }function showMin(){
+        document.getElementById("ans").innerText="-"
+    }function showMul(){
+        document.getElementById("ans").innerText="*"
+    }
+    function showPlus(){
+        document.getElementById("ans").innerText="+"
+    } function showClear(){
+        document.getElementById("ans").innerText=""
+    }
+   
+    
+</script>

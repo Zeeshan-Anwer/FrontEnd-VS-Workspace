@@ -1,0 +1,17 @@
+MASAI CALCULATOR GRID
+Build the given layout using Grid and its properties
+
+MASAI INVESTORS
+Build the following page using grid
+investors.png
+For images refer to https://www.masaischool.com/our-investors/
+
+GRID AREA - 2
+Build the given layouts using grid and grid-area
+
+Grid 2.png
+
+GRID AREA - 1
+Build the given layouts using grid and grid-area
+
+Grid 1.png

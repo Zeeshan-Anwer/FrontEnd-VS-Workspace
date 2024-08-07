@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let btn=document.createElement("button")
+    btn.innerText="Genrate h1"
+    document.querySelector("body").append(btn)
+    
+
+    
+    function fun() {
+    for(var i=0;i<100;i++){
+    let msg=document.createElement("h1");
+    msg.innerText="Welcome Zeeshan"
+    document.querySelector("body").append(msg,btn)
+    }
+}
+btn.addEventListener("click",fun)
+</script>

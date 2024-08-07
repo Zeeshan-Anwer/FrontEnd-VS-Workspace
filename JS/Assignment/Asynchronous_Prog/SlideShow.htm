@@ -1,0 +1,50 @@
+```jsx
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onClick="start()">START</button>
+    <button onClick="stop()">STOP</button>
+
+    <div id="container">
+      <!-- <img
+        src="https://cdn.pixabay.com/photo/2019/05/29/14/30/cinque-terre-4237666_1280.jpg"
+        alt=""
+      /> -->
+    </div>
+  </body>
+</html>
+
+<script>
+  var images = [
+    "https://cdn.pixabay.com/photo/2019/05/29/14/30/cinque-terre-4237666_1280.jpg",
+    "https://cdn.pixabay.com/photo/2022/01/28/21/10/honeybee-6975865_1280.jpg",
+    "https://cdn.pixabay.com/photo/2021/10/16/05/43/love-6713977_1280.jpg",
+    "https://cdn.pixabay.com/photo/2022/01/25/12/58/conifer-6966140_1280.jpg",
+  ];
+
+  let x;
+  function start() {
+    let slideImg = document.createElement("img");
+    let i = 0;
+    x = setInterval(function () {
+      if (i == images.length) {
+        i = 0;
+      }
+      slideImg.src = images[i++];
+      document.querySelector("#container").append(slideImg);
+    }, 2000);
+  }
+
+  function stop() {
+    clearInterval(x);
+  }
+</script>
+```
+
+## Timer:

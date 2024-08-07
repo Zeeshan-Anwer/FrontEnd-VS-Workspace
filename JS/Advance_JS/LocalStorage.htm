@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    localStorage.setItem("name","Zeeshan")
+    localStorage.getItem("name")
+    localStorage.removeItem
+    //clear all item
+    localStorage.clear
+
+    //stringify for arr and obj
+    let arr=[1,2,3,4,5]
+    localStorage.setItem("array",JSON.stringify(arr))
+    let out=JSON.parse(localStorage.getItem("array"))
+    console.log(out)
+
+    let obj={a:1,b:2}
+    localStorage.setItem("object",JSON.stringify(obj))
+    console.log(localStorage.getItem("object"))
+
+
+    
+</script>

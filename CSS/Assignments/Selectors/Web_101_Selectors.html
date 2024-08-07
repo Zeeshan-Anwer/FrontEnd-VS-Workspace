@@ -1,0 +1,145 @@
+   <!-- IMP:_ DEPLOY ON NETLI -->
+   
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>U2C1</title>
+    <style>
+      /* Write your CSS here */
+      h1{
+        text-align: center;
+        color: red;
+
+      }
+
+      p,h3,button{
+        text-align: center;
+      }
+      button{
+        justify-content: center;
+      }
+
+      #music-cards{
+        
+        height: auto;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .music-child{
+        padding-top: 10px;
+        height: 100%;
+        width: 24%;
+        text-align: center;
+      }
+      #guests{
+        width: 80%;
+        border: 3px solid red;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+
+      }
+      .guests-child{
+        margin: auto;
+      }
+      guests > img {
+        max-width: 100%;
+        border-radius: 50%;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top-section -->
+    <h1>Get ready for seamless online music</h1>
+
+    <div id="music-cards">
+      <!-- This section should contain 4 children divs, each div should have img,h4,p -->
+      <div class="music-child"> 
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-06-22/1_478664.webp"/>
+        <h4>High Quality Audio</h4>
+        <p>Listen</p>
+      </div>
+      <div class="music-child"> 
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-06-22/2_611568.webp"/>
+        <h4>No Payment</h4>
+        <p>dfssg fdsf dsfa </p>
+      </div>
+      <div class="music-child"> 
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-06-22/3_784633.webp"/>
+        <h4>Offline Mode</h4>
+        <p>Save $ listen anywhere</p>
+      </div>
+      <div class="music-child"> 
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-06-22/4_716330.webp"/>
+        <h4>Load Free</h4>
+        <p> Free</p>
+      </div>
+    </div>
+
+    <!-- Medium-section -->
+    <h1>Featured Guests</h1>
+    <div id="guests">
+      <!-- This section should contain 3 children divs, each div should have image,h3,p,button -->
+      <div class="guests-child"> 
+        <img src="https://dazeinfo.com/wp-content/uploads/2012/12/zuker1.jpeg" />
+        <h3>Mark Zukerberg</h3>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        <button>Register</button>
+      </div>
+      <div class="guests-child"> 
+        <img src="data:image/jpeg;base64,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"/>
+        <h3>Steve Jobs</h3>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        <button>Register</button>
+      </div>
+      <div class="guests-child"> 
+        <img src="https://i.insider.com/5cbdf4c0b14bf401464d9ce2?width=1000&format=jpeg&auto=webp"/>
+        <h3>Random Person</h3>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        <button>Register</button>
+      </div>
+    </div>
+
+    <!-- bottom-section -->
+    <h1>BUY WHAT’S NEW</h1>
+    <div id="albums">
+      <!-- This section should contain 5 children divs, each div should have img,h3,p -->
+      <div> 
+        <img src="https://preview.colorlib.com/theme/onemusic/img/bg-img/b1.jpg"/>
+        <h3></h3>
+        <p></p>
+       
+      </div>
+      <div> 
+        <img src="https://preview.colorlib.com/theme/onemusic/img/bg-img/b2.jpg"/>
+        <h3></h3>
+        <p></p>
+       
+      </div>
+      <div> 
+        <img src="https://preview.colorlib.com/theme/onemusic/img/bg-img/xb3.jpg.pagespeed.ic.5EvR2jY7Rb.webp"/>
+        <h3></h3>
+        <p></p>
+       
+      </div>
+      <div> 
+        <img src="https://preview.colorlib.com/theme/onemusic/img/bg-img/xb4.jpg.pagespeed.ic.BKljSf9akX.webp"/>
+        <h3></h3>
+        <p></p>
+       
+      </div>
+      <div> 
+        <img src="https://preview.colorlib.com/theme/onemusic/img/bg-img/b2.jpg"/>
+        <h3></h3>
+        <p></p>
+       
+      </div>
+
+    </div>
+  </body>
+</html>

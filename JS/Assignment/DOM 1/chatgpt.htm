@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n1" type="number" placeholder="enter 1st Number">
+    <input id="n2" type="number" placeholder="enter 2nd Number">
+    <button id="add">Add</button>
+    <button id="sub">Sub</button>
+    <button id="mul">Mul</button>
+    <button id="div">Div</button>
+
+    <script>
+        document.getElementById("add").addEventListener("click", addition);
+        document.getElementById("sub").addEventListener("click", subtract);
+        document.getElementById("mul").addEventListener("click", multiply);
+        document.getElementById("div").addEventListener("click", division);
+
+        function addition() {
+            let no1 = parseFloat(document.getElementById("n1").value);
+            let no2 = parseFloat(document.getElementById("n2").value);
+            alert(no1 + no2);
+        }
+
+        function subtract() {
+            let no1 = parseFloat(document.getElementById("n1").value);
+            let no2 = parseFloat(document.getElementById("n2").value);
+            alert(no1 - no2);
+        }
+
+        function multiply() {
+            let no1 = parseFloat(document.getElementById("n1").value);
+            let no2 = parseFloat(document.getElementById("n2").value);
+            alert(no1 * no2);
+        }
+
+        function division() {
+            let no1 = parseFloat(document.getElementById("n1").value);
+            let no2 = parseFloat(document.getElementById("n2").value);
+            alert(no1 / no2);
+        }
+    </script>
+</body>
+</html>

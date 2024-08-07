@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // Step 1: Create elements (tags) of h1 and h2
+    let head = document.createElement("h1");
+    let head2 = document.createElement("h2");
+    let btn = document.createElement("button");
+
+    // Give some styling to the button
+    btn.style.color = "red";
+    btn.style.backgroundColor = "white";
+    btn.style.border = "none";
+    btn.innerText="Submit"
+
+    //setAttribute (id,class, href etc)
+    btn.setAttribute("id","b1")
+
+    // Step 2: Set innerText for h1 and h2
+    head.innerText = "I am heading 1";
+    head2.innerText = "I am heading 2";
+
+    // Step 3: Append h1, h2, and button tags to the body
+    document.querySelector("body").append(head, head2, btn);
+</script>

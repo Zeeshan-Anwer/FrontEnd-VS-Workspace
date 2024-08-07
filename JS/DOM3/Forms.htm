@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="frm">
+        <input id="name" type="text">
+        <input id="num" type="number">
+        <input id="submit" type="submit">
+    </form>
+    <h3 id="sh1"></h3>
+    <h3 id="sh2"></h3>
+
+</body>
+</html>
+
+<script>
+    document.getElementById("frm").addEventListener("submit",show)
+    function show(event)
+    {
+        event.preventDefault()
+        let name= document.querySelector("#name").value
+        name=document.querySelector("#sh1").innerHTML=name
+        let num=document.querySelector("#num").value
+       document.querySelector("#sh2").innerHTML=num
+    }
+</script>

@@ -1,0 +1,6 @@
+MASAI CALCULATOR USING COMBINATORS
+Create a file calculator.html
+
+Your layout should like calculator.png
+
+Use combinators and flex to achieve the layout
